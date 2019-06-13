@@ -1,22 +1,19 @@
 pragma solidity ^0.5.1;
 
-contract organicFarming{
-    
-  struct Farm{
-      bool exists;
+contract organicFarming {
+
+  struct Farm {
       string location;
   }
   
-  struct Plant{
+  struct Plant {
       string plantName;
       uint ORGLevel;
-      address farmOwner;//?
-         //uint plant_id;
-       //uint harvest time?
-      //address plantBy;//?
+      address buyer, seller;
+      uint256 sellBy; //YYMMDD
   }
   
-  struct Record{
+  struct Record {
       uint plant_id;
       uint timestamp; // block#
       uint ORGLevel;
@@ -33,18 +30,18 @@ contract organicFarming{
    //  setFarm -> setPlant -> Record -> Record ->... //
    /*-------------------------------------------------*/ 
    
-  function setFarm(string memory _location) public{
+  function setFarm(string memory _location) public {
       ownerToFarm[msg.sender].location = _location;
-      ownerToFarm[msg.sender].exists = true;
   }
  
-  function setPlant(string memory _plantName,uint _ORGLevel) public returns(uint){
-      uint plant_id = plants.push(Plant(_plantName,_ORGLevel,msg.sender))-1;//starting status of plant
-      plant_idToOwner[plant_id]=msg.sender;
+  function setPlant(string memory _plantName, uint _ORGLevel) public returns(uint) {
+      Plant newPlant = Plant(_plantName,_ORGLevel, msg.sender);
+      uint plant_id = plants.push(newPlant)-1; //starting status of plant
+      plant_idToOwner[plant_id] = msg.sender;
       return plant_id;
   }
   
-    function record(uint _plant_id,uint _ORGLevel) public returns(uint){
+    function record(uint _plant_id,uint _ORGLevel) public returns(uint) {
       require(msg.sender == plant_idToOwner[_plant_id]);
       Farm memory farm =ownerToFarm[msg.sender];
       require(_plant_id < plants.length, "plant_id does not exist");
@@ -59,12 +56,13 @@ contract organicFarming{
      // _;
   }
   
-  function getFarm()public view returns(string memory){
+  function getFarm()public view returns(string memory) {
       require(ownerToFarm[msg.sender].exists,"Farm has not been set");
       Farm memory farm =ownerToFarm[msg.sender];
       return (farm.location);
   }
-  function getPlantById(uint _plant_id)public view returns( string memory, uint, address){
+  
+  function getPlantById(uint _plant_id)public view returns( string memory, uint, address) {
       require(_plant_id<plants.length,"Plant does not exists");
       Plant memory plant = plants[_plant_id];
       return(plant.plantName,plant.ORGLevel,plant.farmOwner);
@@ -73,26 +71,21 @@ contract organicFarming{
       uint ORGLevel;
       address farmOwner;//?*/
   }
+  
   function getRecordByRecordId(uint _record_id)public view returns(uint,uint,uint){
-      require(_record_id<records.length,"Record does not exists");
-      Record memory record =records[_record_id];
+      require(_record_id < records.length, "Record does not exist");
+      Record memory record = records[_record_id];
       return(record.plant_id,record.timestamp,record.ORGLevel);
-      /*  struct Record{
-      uint plant_id;
-      uint timestamp; // block#
-      uint ORGLevel;
-  }*/
   }
+  
   function getRecordIdByPlantId(uint _plant_id)public view returns(uint[] memory){
       require(_plant_id<plants.length,"Plant_id does not exists");
       return plant_idToRecordiD[_plant_id];
   }
+  
   function getRecordId() public view returns(uint[] memory){
-      require(ownerToFarm[msg.sender].exists,"Farm has not been set");
+      require(ownerToFarm[msg.sender].location.length != 0,"Farm has not been set");
       return OwnerToRecordIds[msg.sender];
   }
   
-  //msg.sender' and 'tx.origin'
-  
-   
 }
