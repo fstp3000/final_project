@@ -1,5 +1,6 @@
-# Agricultural Blockchain
-## A Reconceptualized Approach to Organic
+# Agricultural Blockchain: A Reconceptualized Approach to Organic
+Developers & Contributors: 楊昌儒, 張詠盛, 韓哈斯, 張凱捷, 江祿檠 , 蔡存哲, 張碩文, 王品閎, 廖品崴, 張耀中, 廖昱誠<br>
+指導老師: 廖世偉<br>
 
 [Project Specifications (English version)](https://hackmd.io/DXm2kS-TS3i9zp3QAuiGng)<br>
 [Project Specification (中文版)](https://sites.google.com/site/ntublockchain2019/homework/final-termproject)<br>
