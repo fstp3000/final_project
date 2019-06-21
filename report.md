@@ -1,6 +1,6 @@
 # Agricultural Blockchain: A Reconceptualized Approach to Organic
 ### Developers & Contributors
-楊昌儒, 張詠盛, Seth Austin Harding, 張凱捷, 江祿檠 , 蔡存哲, 張碩文, 王品閎, 廖品崴, 張耀中
+楊昌儒, 張詠盛, 韓哈斯, 張凱捷, 江祿檠 , 蔡存哲, 張碩文, 王品閎, 廖品崴, 張耀中, 廖昱誠
 ### Abstract
 The current inspection process for organic verification is opaque and cumbersome, and is based on inconsistent standards from random samples; to simplify this process, we propose a new course of action using blockchain.
 
