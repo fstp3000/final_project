@@ -1,10 +1,8 @@
 # Agricultural Blockchain
 ## A Reconceptualized Approach to Organic
 
-### 步驟
-1. 發布合約(a農長在五月份菠菜的有機程度)
-2. 顯示在平台上(interface)
-3. 路人甲可以透過平台上資訊支持a農場
-4. a農場收到甲的虛擬貨幣
-
-投影片的介紹: https://www.dropbox.com/s/ihqmx9mwa4f3aaz/Agricultural%20Blockchain.pptx?dl=0#
+[Project Specifications (English version)](https://hackmd.io/DXm2kS-TS3i9zp3QAuiGng)<br>
+[Project Specification (中文版)](https://sites.google.com/site/ntublockchain2019/homework/final-termproject)<br>
+[Report](https://github.com/fstp3000/final_project/blob/master/report.md)<br>
+[Poster for 發表會](https://docs.google.com/presentation/d/1MaGXhfOLhXrsJEaTGvz4ov_wu7Qwn5l2Sf9nSmpS2T8/edit#slide=id.p1)<br>
+[Slides](https://www.dropbox.com/s/ihqmx9mwa4f3aaz/Agricultural%20Blockchain.pptx?dl=0#)
