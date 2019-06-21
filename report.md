@@ -26,13 +26,17 @@ Our current machine prototype has a camera mounted to the top of a metal, enviro
 
 Because blockchain is an unalterable data structure, it is naturally effective for sensitive data verification. Current technologies easily support verification of images, and are also being developed for hashing of video content.
 There is now a trend in the world of fake news to generate what is called 'deepfakes', which is essentially deep learning's way of putting words never spoken into the mouths of its subjects, both in video and corresponding audio[3]. To combat this, blockchain is being used to verify video content.
-I propose that our livestreamed video content may, using the same technology, be used to 
---------
-#### Government
-Responsible government agencies of which are taking on the responsibility of manual inspection may now reap the benefit of our design. 
-#### Buyer
-#### Seller
+I propose that our livestreamed video content may, using the same technology, be used to <br>
 
+--------
+
+### Roles
+#### Government
+Responsible government agencies of which are taking on the responsibility of manual inspection may now reap the benefit of our design.
+#### Buyer
+Anyone seeking to certify the organic status of their food may be a potential buyer. Such parties may include restaurants, grocery stores, and other redistributors.
+#### Seller
+The seller in this case is, of course, the farmer. Besides for providing the government with compulsory crop data, they may also choose to allow others access to this information, which creates another incentive for sellers to produce genuinely organic crops.
 
 ### Acknowledgements
 There are several weak points to our solution that we have taken note of, thanks to feedback from HTC and others who have helped us to review. For example, if an insect does not move, it will be very difficult or impossible to use DeepQ's API to assess whether a specific entity in the frame is an insect. Right now, our solution would only work for moving insects. Another thing is that, we need to verify a proven correlation between the number of insects on a crop and the usage of pesticides. More insects almost inevitably mean less insecticides and in turn, higher organic index. However, plants also have their own built in insecticide mechanisms. Factors such as these as well as season, time of day, type of crop, and many more would need to be assessed. That is to say that this product is still very much a prototype.<br>
@@ -42,4 +46,6 @@ There are some solutions that may solve this problem. To make the private key ge
 The winning point in our solution is in the simplicity of our design. The open source code can be checked by anyone. It’s just a few hundred lines of code to simplify the current inspection process.
 
 #### Reference Material
-https://www.wired.com/story/the-blockchain-solution-to-our-deepfake-problems/
+[1]. [有機農業全球資訊網](http://info.organic.org.tw/3669/)<br>
+[2]. *Insect Pest Management in Organic Farming System, Hamadttu Abdel Farag El-Shafie, Submitted: September 20th 2018, Reviewed: January 17th 2019, Published: March 15th*<br>
+[3]. [Deepfake & Blockchain](https://www.wired.com/story/the-blockchain-solution-to-our-deepfake-problems/) [3]
