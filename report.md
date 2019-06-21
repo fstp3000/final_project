@@ -16,3 +16,21 @@ On January 29, 2007, the Agricultural Product Production and Verification Manage
 
 How are we to prove when insecticides are used? The easiest indicator of this is how many insects are on crops. According to [2] paper 6.5, we can know there are specific kinds of pests prevailing in the organic date palm plantation, since we can track  the insects on the crops, identify and quantify the count of each specific insect, expressing it to a formula.<br>
 
+### Our Blockchain Design
+The current inspection process is opaque and cumbersome, and is based on inconsistent standards from random samples.
+We need a secure, intuitive, and mutually verified means by which three parties may communicate: government, buyer, and seller.<br>
+The API we implement in this project is DeepQ, an API developed by Google which has a backend of Ethereum. Ethereum is the second most popular blockchain under Bitcoin; its nodes proof of stake mechanism allow for storage of highly secure data, all while eliminating the need for a private chain (which would be both more expensive, potentially less secure, and generally more difficult to manage and upkeep). Ethereum's potent smart contract capabilities allow for it to differentiate itself from Bitcoin. Smart contracts are a mechanism by which all parties in a blockchain, including buyers, sellers, and prospective nodes may be completely ensured of fair transaction management without any mutual trust between these parties whatsoever. Meanwhile, to further verify the efficacy of our design, we are in the process of developing a smart contract; it is currently in prototype form. [We will place it on Ropsten testnet and the results will be published likely by the end of this weekend].
+
+
+#### Government
+Responsible government agencies of which are taking on the responsibility of manual inspection may now reap the benefit of our design. Our 
+#### Buyer
+#### Seller
+
+
+### Acknowledgements
+There are several weak points to our solution that we have taken note of, thanks to feedback from HTC and others who have helped us to review. For example, if an insect does not move, it will be very difficult or impossible to use DeepQ's API to assess whether a specific entity in the frame is an insect. Right now, our solution would only work for moving insects. Another thing is that, we need to verify a proven correlation between the number of insects on a crop and the usage of pesticides. More insects almost inevitably mean less insecticides and in turn, higher organic index. However, plants also have their own built in insecticide mechanisms. Factors such as these as well as season, time of day, type of crop, and many more would need to be assessed. That is to say that this product is still very much a prototype.<br>
+Blockchain can't do everything. One of the difficulties of implement blockchain in this project is the data does not have a mechanism by which to protect from being modified before being parsed by the chain, which is to say that we would be verifying fake data.
+There are some solutions that may solve this problem. To make the private key generated in the chip sign all the transactions in the device would be a start.<br>
+
+The winning point in our solution is in the simplicity of our design. The open source code can be checked by anyone. It’s just a few hundred lines of code to simplify the current inspection process.
