@@ -21,19 +21,29 @@ The current inspection process is opaque and cumbersome, and is based on inconsi
 We need a secure, intuitive, and mutually verified means by which three parties may communicate: government, buyer, and seller.<br>
 The API we implement in this project is DeepQ, an API developed by Google which has a backend of Ethereum. Ethereum is the second most popular blockchain under Bitcoin; its nodes proof of stake mechanism allow for storage of highly secure data, all while eliminating the need for a private chain (which would be both more expensive, potentially less secure, and generally more difficult to manage and upkeep). Ethereum's potent smart contract capabilities allow for it to differentiate itself from Bitcoin. Smart contracts are a mechanism by which all parties in a blockchain, including buyers, sellers, and prospective nodes may be completely ensured of fair transaction management without any mutual trust between these parties whatsoever. Meanwhile, to further verify the efficacy of our design, we are in the process of developing a smart contract; it is currently in prototype form. [We will place it on Ropsten testnet and the results will be published likely by the end of this weekend].<br>
 
+Still though, what is the advantage of using blockchain in this scenario? Why can't we just distribute a platform oversought be responsible parties? Blockchain is a decentralized platform, and this is it's advantage. With our proposed solution, no party may take control of distribution of the data (with the single requirement of the farmer distributing data to the government). Blockchain is an immutable, unchangeable data structure, and also provides a time stamp. In theory, data may first be simultaneously parsed and compared between the data mart and the blockchain. Fake or intercepted data may be disproven and eliminated.
+*Other theoretical cool stuff* -- Because blockchain is an unalterable data structure, it is naturally effective for sensitive data verification. Current technologies easily support verification of images, and are also being developed for hashing of video content.
+There is now a trend in the world of fake news to generate what is called 'deepfakes', which is essentially deep learning's way of putting words never spoken into the mouths of its subjects, both in video and corresponding audio[3]. To combat this, blockchain is being used to verify video content.<br>
+The chosen blockchain is Ethereum. Ethereum's mining incentives are fundamentally just about the same as Bitcoin's.
+*
+For each block of transactions, miners use computers to repeatedly and very quickly guess answers to a puzzle until one of them wins.*[4]*
+
+More specifically, the miners will run the block’s unique header metadata (including timestamp and software version) through a hash function (which will return a fixed-length, scrambled string of numbers and letters that looks random), only changing the ‘nonce value’, which impacts the resulting hash value.
+
+If the miner finds a hash that matches the current target, the miner will be awarded ether and broadcast the block across the network for each node to validate and add to their own copy of the ledger. If miner B finds the hash, miner A will stop work on the current block and repeat the process for the next block.
+*
+Ethereum, however, uses proof of stake, rather than proof of work, to implement the 'ethash' system -- all the while making the (now conventional) ASIC miners less efficient. Blocks on Ethereum are generated every 12 to 15 seconds using this method; in this system, miners may be assured a more equal opportunity of mining a block (without an ASIC CPU) than on Bitcoin, all the while users may rest assured with Ethereum's advanced security.
+
+
 ### Machine Prototype
 Our current machine prototype has a camera mounted to the top of a metal, environment-resistant box. The intent of the design is to constantly survey crops inside of this box. The growth of the crop will not be inhibited by this structure as light and rain still easily may flow to the surveyed crop. The current prototype is fairly small and would not be suitable for surveying larger crops such as wheat. In future designs, we have considered having stochastic location surveying from a drone with a mounted camera; agricultural locations may be mapped onto a separate drone system. Technologies such as this already exist and are provided by DJI. All we need is for the drone to transmit the data to the blockchain. The drone may change locations periodically after gathering sufficient data, and the data transmission would be, in essence, uninterruptible.
-
-Because blockchain is an unalterable data structure, it is naturally effective for sensitive data verification. Current technologies easily support verification of images, and are also being developed for hashing of video content.
-There is now a trend in the world of fake news to generate what is called 'deepfakes', which is essentially deep learning's way of putting words never spoken into the mouths of its subjects, both in video and corresponding audio[3]. To combat this, blockchain is being used to verify video content.
-I propose that our livestreamed video content may, using the same technology, be used to <br>
+<br>
 
 --------
 
 ### Roles
 There are four phases in our Blockchain incentive mechanisms: farmer, government, investor or consumer, and data analysis.
-Data analysis will pay to collect the data for analysis.
-
+Data analysis will pay to collect the data for analysis.<br>
 #### Government
 Responsible government agencies of which are taking on the responsibility of manual inspection may now reap the benefit of our design. The government will check the data the farmer uploads and issues marks to farmers, increasing the transparency of the process of authentication.
 #### Buyer
@@ -78,4 +88,5 @@ The winning point in our solution is in the simplicity of our design. The open s
 #### Reference Material
 [1]. [有機農業全球資訊網](http://info.organic.org.tw/3669/)<br>
 [2]. *Insect Pest Management in Organic Farming System, Hamadttu Abdel Farag El-Shafie, Submitted: September 20th 2018, Reviewed: January 17th 2019, Published: March 15th*<br>
-[3]. [Deepfake & Blockchain](https://www.wired.com/story/the-blockchain-solution-to-our-deepfake-problems/) [3]
+[3]. [Deepfake & Blockchain](https://www.wired.com/story/the-blockchain-solution-to-our-deepfake-problems/)<br>
+[4]. [Ethereum Mining Mechanics](https://www.coindesk.com/information/ethereum-mining-works)
