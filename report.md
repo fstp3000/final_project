@@ -5,9 +5,9 @@
 The current inspection process for organic verification is opaque and cumbersome, and is based on inconsistent standards from random samples; to simplify this process, we propose a new course of action using blockchain.
 
 ### Blockchain Application
-Insect populations, of which are essential to maintaining ecosystem balance, are being decimated by pesticides all throughout the world. The first think that might come to your mind is: What role might blockchain play in combating this phenomenon? Good question!<br>
+Insect populations, of which are essential to maintaining ecosystem balance, are being decimated by pesticides all throughout the world. The first thing that might come to your mind is: What role might blockchain play in combating this phenomenon? Good question!<br>
 
-Proving the organic status of agri-cultural products has been and re-mains one of the most difficult pro-cesses in the agricultural industry.<br>
+Proving the organic status of agricultural products has been and remains one of the most difficult pro-cesses in the agricultural industry.<br>
 
 First of all, what is organic defined as? According to the Taiwan government:<br>
 Existing methods require verification by numerous agencies.<br>
