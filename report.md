@@ -26,7 +26,7 @@ Still though, what is the advantage of using blockchain in this scenario? Why ca
 There is now a trend in the world of fake news to generate what is called 'deepfakes', which is essentially deep learning's way of putting words never spoken into the mouths of its subjects, both in video and corresponding audio[3]. To combat this, blockchain is being used to verify video content.<br>
 The chosen blockchain is Ethereum. Ethereum's mining incentives are fundamentally just about the same as Bitcoin's.
 *
-For each block of transactions, miners use computers to repeatedly and very quickly guess answers to a puzzle until one of them wins.*[4]*
+For each block of transactions, miners use computers to repeatedly and very quickly guess answers to a puzzle until one of them wins. *[4]*
 
 More specifically, the miners will run the block’s unique header metadata (including timestamp and software version) through a hash function (which will return a fixed-length, scrambled string of numbers and letters that looks random), only changing the ‘nonce value’, which impacts the resulting hash value.
 
@@ -34,10 +34,11 @@ If the miner finds a hash that matches the current target, the miner will be awa
 *
 Ethereum, however, uses proof of stake, rather than proof of work, to implement the 'ethash' system -- all the while making the (now conventional) ASIC miners less efficient. Blocks on Ethereum are generated every 12 to 15 seconds using this method; in this system, miners may be assured a more equal opportunity of mining a block (without an ASIC CPU) than on Bitcoin, all the while users may rest assured with Ethereum's advanced security.
 
-
 ### Machine Prototype
 Our current machine prototype has a camera mounted to the top of a metal, environment-resistant box. The intent of the design is to constantly survey crops inside of this box. The growth of the crop will not be inhibited by this structure as light and rain still easily may flow to the surveyed crop. The current prototype is fairly small and would not be suitable for surveying larger crops such as wheat. In future designs, we have considered having stochastic location surveying from a drone with a mounted camera; agricultural locations may be mapped onto a separate drone system. Technologies such as this already exist and are provided by DJI. All we need is for the drone to transmit the data to the blockchain. The drone may change locations periodically after gathering sufficient data, and the data transmission would be, in essence, uninterruptible.
 <br>
+
+![/images/im2.png]
 
 --------
 
