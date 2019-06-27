@@ -38,7 +38,7 @@ Ethereum, however, uses proof of stake, rather than proof of work, to implement 
 Our current machine prototype has a camera mounted to the top of a metal, environment-resistant box. The intent of the design is to constantly survey crops inside of this box. The growth of the crop will not be inhibited by this structure as light and rain still easily may flow to the surveyed crop. The current prototype is fairly small and would not be suitable for surveying larger crops such as wheat. In future designs, we have considered having stochastic location surveying from a drone with a mounted camera; agricultural locations may be mapped onto a separate drone system. Technologies such as this already exist and are provided by DJI. All we need is for the drone to transmit the data to the blockchain. The drone may change locations periodically after gathering sufficient data, and the data transmission would be, in essence, uninterruptible.
 <br>
 
-![/images/im2.png]
+![](images/im1.png)
 
 --------
 
